@@ -24,8 +24,7 @@ def mail_validation():
 
 def check_condition(func,expected,*args):
     try:
-        function_result = func(*args)
-        satisfy = function_result is expected
+        satisfy = func(*args) is expected
         if satisfy:
             message = None
         else:
